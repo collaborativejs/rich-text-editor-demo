@@ -1,0 +1,38 @@
+{
+  "name": "collaborative-rich-text-editor-demo",
+  "version": "1.0.0",
+  "description": "An example implementation of application with collaborative access to rich text using SimpleMDE editor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/collaborativejs/rich-text-editor-demo"
+  },
+  "bugs": {
+    "url": "https://github.com/collaborativejs/rich-text-editor-demo/issues"
+  },
+  "keywords": [
+    "Rich Text",
+    "Text Documents",
+    "Collaborative Text",
+    "JavaScript",
+    "Node.js",
+    "Live Editing",
+    "Collaborative Documents",
+    "Collaborative Software",
+    "Collaborative Access"
+  ],
+  "author": "Collaborative.js <contact@collaborativejs.org> (http://collaborativejs.org)",
+  "license": "Apache-2.0",
+  "homepage": "http://collaborativejs.org",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "collaborative": "^0.0.13",
+    "express": "^4.15.3",
+    "simplemde": "^1.11.2",
+    "uuid": "^3.1.0"
+  }
+}

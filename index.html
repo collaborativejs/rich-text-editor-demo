@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link type="text/css" rel="stylesheet" href="/vendor/simplemde.min.css">
+
+    <title>Getting Started with Collaborative.js</title>
+
+    <style>
+        a, div, input, button, textarea {
+            outline: none;
+        }
+
+        .CodeMirror {
+            height: 400px;
+        }
+
+        .sharing-link {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="sharing-link">
+    Use this link to open the document in a separate window or share it with friend:
+    <a id="sharing-link" href="#" target="_blank"></a>
+</div>
+<textarea id="text-area"></textarea>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/vendor/simplemde.min.js"></script>
+<script src="/collaborative.min.js"></script>
+<script>
+  // {{site}} token is replaced by the server with the site data during the page rendering
+  // For details, see '/document/:id?' endpoint at index.js file
+  var site = '{{site}}';
+  var updateDocumentUrl = '/' + site.document.id + '/update';
+
+  // These calls are utility ones and are not related to the Collaborative.js functionality
+  updatePageUrl();
+  renderSharingLink();
+
+  /**
+   * Renders a sharing link, so you can play around with the demo in two separate windows or
+   * share it with a friend.
+   */
+  function renderSharingLink() {
+    var $shareLink = $('#sharing-link');
+    $shareLink.attr('href', document.location.href);
+    $shareLink.html(document.location.href);
+  }
+
+  /**
+   * Updates page URL with document id, so you may copy page URL from the browser address bar
+   * to open it in a separate window or share it with a friend.
+   */
+  function updatePageUrl() {
+    var path = '/' + site.document.id;
+    if (window.location.pathname !== path) {
+      if (history) history.replaceState(null, null, path);
+      else window.location.replace(path);
+    }
+  }
+</script>
+<script src="/setup_collaborative.js"></script>
+<script src="/setup_text_editor.js"></script>
+
+</body>
+</html>
