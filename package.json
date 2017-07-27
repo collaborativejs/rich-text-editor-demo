@@ -1,7 +1,7 @@
 {
   "name": "collaborative-rich-text-editor-demo",
   "version": "1.0.0",
-  "description": "An example implementation of application with collaborative access to rich text using SimpleMDE editor.",
+  "description": "Example of application with collaborative access to rich text using Collaborative.js and  SimpleMDE editor.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
