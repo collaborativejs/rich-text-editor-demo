@@ -23,10 +23,10 @@ deployment:
     branch: master
     commands:
       - python ./bin/deploy.py deploy -e production
-      - curl "https://api.telegram.org/$BOT_ID/sendMessage?chat_id=CHAT_ID&text=text.collaborativejs.org - build complete"
+      - curl "https://api.telegram.org/$BOT_ID/sendMessage?chat_id=$CHAT_ID&text=text.collaborativejs.org - build complete"
 
   staging:
     branch: staging
     commands:
       - python ./bin/deploy.py deploy -e staging
-      - curl "https://api.telegram.org/$BOT_ID/sendMessage?chat_id=CHAT_ID&text=text.collaborativejs.stg - build complete"
+      - curl "https://api.telegram.org/$BOT_ID/sendMessage?chat_id=$CHAT_ID&text=text.collaborativejs.stg - build complete"
