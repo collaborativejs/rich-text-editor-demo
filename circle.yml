@@ -1,0 +1,32 @@
+machine:
+  hosts:
+    collaborativejs.org: $SITE_ADDRESS
+
+dependencies:
+  pre:
+    - sudo apt-get update
+    - sudo apt-get install rsync
+    - sudo apt-get install python-dev
+    - pip install fabric
+
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
+
+test:
+  override:
+    - echo "test"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - python ./bin/deploy.py deploy -e production
+      - curl "https://api.telegram.org/$BOT_ID/sendMessage?chat_id=CHAT_ID&text=text.collaborativejs.org - build complete"
+
+  staging:
+    branch: staging
+    commands:
+      - python ./bin/deploy.py deploy -e staging
+      - curl "https://api.telegram.org/$BOT_ID/sendMessage?chat_id=CHAT_ID&text=text.collaborativejs.stg - build complete"
