@@ -62,7 +62,7 @@ function sendingFunc(execOrder, updates, callback) {
   var data = {execOrder: execOrder, updates: updates};
 
   $.ajax({
-    url: updateDocumentUrl,
+    url: '/' + site.document.id + '/update',
     type: 'POST',
     data: JSON.stringify(data),
     dataType: 'json',
