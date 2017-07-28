@@ -10,10 +10,10 @@ var fs = require('fs');
 var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(express.static('node_modules/collaborative/dist'));
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/node_modules/collaborative/dist'));
+app.use(express.static(__dirname + '/public'));
 
-var initialText = fs.readFileSync('./public/initial_text.md', 'utf8');
+var initialText = fs.readFileSync(__dirname + '/public/initial_text.md', 'utf8');
 
 
 // Crates in-memory storage
