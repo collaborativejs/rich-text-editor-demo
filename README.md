@@ -1,6 +1,8 @@
 # Rich Text Demo with Collaborative.js
+[<img src="http://collaborativejs.org/img/logo-transparent-color.png" width="234px" alt="Collaborative.js - Collaborative software for any project">](http://collaborativejs.org)
 
-This is Example of application with collaborative access to rich text using Collaborative.js and  SimpleMDE editor.
+This is example of application with collaborative access to rich text using Collaborative.js and  SimpleMDE editor.
+[<img src="http://collaborativejs.org/img/landing/rich-text-demo.png" alt="Rich Text demo with collaborative access | Collaborative.js">](http://collaborativejs.org/demos/rich-text-editor-demo)
 
 ## Running
 Clone the repository from github.com to your workspace folder:
@@ -26,4 +28,10 @@ $ npm start
 Open [http://localhost:3000/](http://localhost:3000/) page in your browser.
 
 
+## Further Learning
+* [Documentation](http://collaborativejs.org/docs)
+* [API Reference](http://collaborativejs.org/api)
+* [Technical Support](http://collaborativejs.org/support)
 
+## License
+[© Collaborative.js - Collaborative software for any project](http://collaborativejs.org). This demo released under the [Apache 2.0 License](https://github.com/collaborativejs/rich-text-editor-demo/blob/master/LICENSE).
