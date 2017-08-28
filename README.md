@@ -3,6 +3,7 @@
 
 # Rich Text Demo with Collaborative.js
 This is example of application with collaborative access to rich text using Collaborative.js and  SimpleMDE editor.
+  
 [<img src="http://collaborativejs.org/img/landing/rich-text-demo.png" alt="Rich Text demo with collaborative access | Collaborative.js">](http://collaborativejs.org/demos/rich-text-editor-demo)
 
 ## Running
