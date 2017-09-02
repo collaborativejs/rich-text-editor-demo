@@ -2,9 +2,9 @@
 [<img src="http://collaborativejs.org/img/logo-transparent-color.png" width="100px" alt="Collaborative.js - Collaborative software for any project">](http://collaborativejs.org)
 
 # Rich Text Demo with Collaborative.js
-This is example of application with collaborative access to rich text using Collaborative.js and  SimpleMDE editor.
+This is example of application with collaborative access to rich text (text live editing) using Collaborative.js and  SimpleMDE editor.
   
-[<img src="http://collaborativejs.org/img/landing/rich-text-demo.png" alt="Rich Text demo with collaborative access | Collaborative.js">](http://collaborativejs.org/demos/rich-text-editor-demo)
+[<img src="http://collaborativejs.org/img/landing/rich-text-demo.png" alt="Rich Text demo with collaborative access (text live editing) | Collaborative.js">](http://collaborativejs.org/demos/rich-text-editor-demo)
 
 ## Running
 Clone the repository from github.com to your workspace folder:
